@@ -8,10 +8,14 @@ import com.github.zuihou.utils.StrPool;
  * 用于同一管理和生成缓存的key， 避免多个项目使用的key重复
  * <p>
  * 使用@Cacheable时， 其value值一定要在此处指定
+ * <p>
+ * 3.0.0 废弃本类
  *
  * @author zuihou
  * @date 2019/08/06
+ * @see com.github.zuihou.common.cache.CacheKeyDefinition
  */
+@Deprecated
 public interface CacheKey {
     // 权限系统缓存 start
 
